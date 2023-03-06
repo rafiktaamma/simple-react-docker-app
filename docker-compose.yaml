@@ -4,7 +4,7 @@ version: "2.6.1"
 services:
   app:
     container_name: docker-react-container
-    container_image: docker-react-image
+    image: docker-react-image
     build:
       context: .
     ports:
