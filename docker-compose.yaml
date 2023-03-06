@@ -7,5 +7,7 @@ services:
     image: docker-react-image
     build:
       context: .
+      args:
+        - REACT_APP_MY_APP_SLOT=  "deployement"
     ports:
       - 8080:80

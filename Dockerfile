@@ -3,6 +3,8 @@ FROM node:17-alpine as builder
 WORKDIR /app
 COPY package.json .
 RUN npm install
+ARG REACT_APP_MY_APP_SLOT
+ENV REACT_APP_MY_APP_SLOT=$REACT_APP_MY_APP_SLOT
 COPY . .
 RUN npm run build
 
