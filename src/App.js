@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div style={{marginBottom : 20}}>
-      <p>{process.env.REACT_APP_MY_APP_SLOT}</p>//printing it to screen
+      <p>{process.env.REACT_APP_MY_APP_SLOT}</p>{/*printing it to screen*/}
       </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
