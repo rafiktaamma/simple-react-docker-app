@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'simple-react-docker-app'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D4272FAF1D944A199D6D956F2A20C405 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A9A62C9CC3BC4DD6BCB8EC12AECE7897 }}
           package: .
