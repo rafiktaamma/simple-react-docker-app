@@ -2,11 +2,12 @@
 FROM node:18-alpine as builder
 WORKDIR /app
 COPY package.json .
-RUN npm install
+COPY yarn.lock . 
+RUN yarn install
 ARG REACT_APP_MY_APP_SLOT
 ENV REACT_APP_MY_APP_SLOT=$REACT_APP_MY_APP_SLOT
 COPY . .
-RUN npm run build
+RUN yarn run build
 
 #Stage 2
 FROM nginx:alpine
