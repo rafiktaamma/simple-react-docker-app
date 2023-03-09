@@ -7,4 +7,4 @@ RUN yarn install
 ENV REACT_APP_MY_APP_SLOT='default dockerfile value'
 COPY . .
 EXPOSE 80
-CMD [ "yarn start" ]
+CMD yarn run start
