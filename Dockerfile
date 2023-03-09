@@ -4,8 +4,7 @@ WORKDIR /app
 COPY package.json .
 COPY yarn.lock . 
 RUN yarn install
-ARG REACT_APP_MY_APP_SLOT
-ENV REACT_APP_MY_APP_SLOT=$REACT_APP_MY_APP_SLOT
+ENV REACT_APP_MY_APP_SLOT='default dockerfile value'
 COPY . .
 RUN yarn run build
 
